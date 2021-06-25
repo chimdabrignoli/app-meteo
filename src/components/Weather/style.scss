@@ -1,0 +1,101 @@
+.meteo {
+display: flex;
+justify-content: center;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+width: 25%;
+margin: 1rem auto;
+background-color: rgba(255,255,255,0.3);
+border: 1px solid #ddd;
+padding: 1rem;
+border-radius: 5px;
+text-align: center;
+box-sizing: content-box;
+//text-transform: capitalize;
+    &-container {
+      display: flex;
+      flex-direction: column ;
+    }
+    &-infos {
+      width: 100%;
+    }
+    &-temperature {
+      text-align: center;
+      margin: 0;
+      font-size: 2em;
+    }
+    &-city {
+      margin: 0em 0 0.5em 0;
+      font-size: 2em;
+    }
+    &-hot{
+      background-color: yellow;
+    }
+    &-cold{
+      background-color: blue;
+    }
+    &-visible{
+      visibility: visible;
+    }
+    &-hidden {
+      visibility: hidden;
+    }
+    &-text{
+      text-transform: uppercase;
+     
+    }
+    &-text img {
+      width:9%;
+      margin:0 0.5em;
+    }
+}
+/* MEDIA QUERIES*/
+/*---------------MOBILE ---------------*/
+@media screen and (min-width: 200px) and (max-device-width: 480px) {
+  .meteo{
+    width:70% ; 
+      &-city {
+        font-size: 1.5em;
+      }  
+      &-temperature {
+        font-size: 1.5em;
+      }
+      &-text img {
+        width:15%;
+      }
+  
+  }
+ 
+}
+/* MEDIA QUERIES*/
+/*---------------TABLET ---------------*/
+@media screen and (min-width: 480px) and (max-device-width: 768px) {
+  .meteo{
+    width:50% ; 
+      &-city {
+        font-size: 1.5em;
+      }  
+      &-temperature {
+        font-size: 1.5em;
+      }
+      &-text img {
+        width:12%;
+      }
+  }
+}
+/*---------------TABLET & LAPTOP ---------------*/
+@media screen and (min-width: 769px) and (max-device-width:1024px) {
+  .meteo{
+    width:40% ; 
+      &-city {
+        font-size: 1.5em;
+      }  
+      &-temperature {
+        font-size: 1.5em;
+      }
+      &-text img {
+        width:10%;
+      }
+  
+  }
+ 
+}
